@@ -6872,7 +6872,7 @@ button.close {
 </style>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="Seed Savior: Mnemonic Phrase Recovery Tool" name="description" />
-        <meta content="Tal Be'ery (KZen Networks)" name="author" />
+        <meta content="Groestlcoin Developers" name="author" />
     </head>
     <body>
         <div class="container">
@@ -6887,10 +6887,10 @@ button.close {
                         <div class="form-group">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
-                                <p> This tool is meant to help users with reacovring a slightly incorrect Bitcoin and Ethereum mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
+                                <p> This tool is meant to help users with recovering a slightly incorrect Groestlcoin mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
                                 </p>
-                                
-                                
+
+
                             </div>
                         </div>
                         <div class="form-group generate-container">
@@ -6899,95 +6899,71 @@ button.close {
                                 <div class="form-inline">
                                     <div class="input-group-inline">
                                          <span><p><b>Enter your mnemonic</b></p>
-                                             <b>Usage example (see also the demo section below)</b>: enter "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
+                                             <b>Usage example</b>: enter "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
                                              <p>
-                                            
-                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Ethereum address, listed in the "BIP44 ETH Address" column "0x2dfF20b40504f99c6314ac30e8DF5c02dd8058e7"
+
+                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Groestlcoin address, listed in the "BIP44 GRS Address" column "FqbW22H3Xwq96zE4XvMVFB4mJ2n3S33jgX"
                                              </p>
                                          </span>
-                                    
+
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phrase" class="col-sm-2 control-label">BIP39 Mnemonic</label>
                             <div class="col-sm-10">
                                 <textarea id="phrase" placeholder="phrase brief ceiling dream rack install fault insane panic surround glory ? library brother hill sauce access child notice picnic dinner panda purity poem" class="phrase private-data form-control"></textarea>
                             </div>
                         </div>
-                        
-                        
+
+
                         <table class="table table-striped" >
                             <thead>
                                 <th>
                                     <div class="input-group">
                                         <span>Recovered Word</span>&nbsp;&nbsp;
-                                        
+
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP44 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP44 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP49 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP49 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP84 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP84 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
-                                <th>
-                                    <div class="input-group">
-                                        <span>BIP44 ETH Address</span>&nbsp;&nbsp;
-                                    </div>
-                                </th>
-                                
+
                             </thead>
                             <tbody class="addresses-recovery monospace">
-                           
+
                             </tbody>
                         </table>
-                        
+
                         </div>
-                
-        
-                
+
+
+
             <div class="row">
                 <div class="col-md-12">
                     <h2>License</h2>
                     <p>
-                    <span>Please refer to <a href="https://github.com/KZen-networks/mnemonic-recovery/blob/master/LICENSE" target="_blank">the software license</a> for more detail.
+                    <span>Please refer to <a href="https://github.com/Groestlcoin/mnemonic-recovery/blob/master/LICENSE" target="_blank">the software license</a> for more detail.
                     </span>
                     </p>
                     <p>The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
                 </div>
             </div>
-            <hr>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Demo</h2>
-                    <p>
-                    In this demo we enter "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
-                    </p>
-                    <p>
-                    
-                    The tool suggests several options for the missing word and the relevant one will be "asset". We can verify that by clicking on the link of the dervied Ethereum address ("0x2dfF20b40504f99c6314ac30e8DF5c02dd8058e7" listed in the "BIP44 ETH Address" column) and checking the address has transaction history.
-                    <figure>
-                        <img src="img/seed demo annotated.gif" alt="Demo" style="width:100%">
-                            
-                    </figure>
-                  
-                </div>
-            </div>
-
             <hr>
 
             <div class="row">
@@ -7009,7 +6985,7 @@ button.close {
                     <p>
                     <span>Alternatively, download the file from the repository</span>
                     -
-                    <a href="https://github.com/KZen-networks/mnemonic-recovery/">https://github.com/KZen-networks/mnemonic-recovery/</a>
+                    <a href="https://github.com/Groestlcoin/mnemonic-recovery/">https://github.com/Groestlcoin/mnemonic-recovery/</a>
                     </p>
 
                 </div>
@@ -7025,11 +7001,11 @@ button.close {
                     <p>
                         <span>Get the source code from the repository</span>
                         -
-                        <a href="https://github.com/KZen-networks/mnemonic-recovery" target="_blank">
-                            https://github.com/KZen-networks/mnemonic-recovery
+                        <a href="https://github.com/Groestlcoin/mnemonic-recovery" target="_blank">
+                            https://github.com/Groestlcoin/mnemonic-recovery
                         </a>
                     </p>
-                    
+
                     <p>
                     <span>The project is based on Ian Coleman's Bip39 project. Get Bip39's source code from the repository</span>
                     -
@@ -7042,8 +7018,8 @@ button.close {
 
                     <p>
                         <span>BitcoinJS - </span>
-                        <a href="https://github.com/bitcoinjs/bitcoinjs-lib" target="_blank">
-                            https://github.com/bitcoinjs/bitcoinjs-lib
+                        <a href="https://github.com/groestlcoin/groestlcoinjs-lib" target="_blank">
+                            https://github.com/groestlcoin/groestlcoinjs-lib
                         </a>
                     </p>
 
@@ -34795,13 +34771,13 @@ module.exports={
   "OP_CHECKMULTISIGVERIFY": 175,
 
   "OP_NOP1": 176,
-  
+
   "OP_NOP2": 177,
   "OP_CHECKLOCKTIMEVERIFY": 177,
 
   "OP_NOP3": 178,
   "OP_CHECKSEQUENCEVERIFY": 178,
-  
+
   "OP_NOP4": 179,
   "OP_NOP5": 180,
   "OP_NOP6": 181,
@@ -41365,1482 +41341,6 @@ module.exports = {
 }).call(this,require("buffer").Buffer)
 },{"bs58check":83,"buffer":5}]},{},[34])(34)
 });</script>
-        <script>bitcoinjs.bitcoin.networks.shadow = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0xEE80286A,
-    private: 0xEE8031E8
-  },
-  pubKeyHash: 0x3f,
-  scriptHash: 0x7d,
-  wif: 0xbf
-};
-
-bitcoinjs.bitcoin.networks.shadowtn = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x76C0FDFB,
-    private: 0x76C1077A
-  },
-  pubKeyHash: 0x7f,
-  scriptHash: 0xc4,
-  wif: 0xff
-};
-
-bitcoinjs.bitcoin.networks.clam = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0xa8c26d64,
-    private: 0xa8c17826
-  },
-  pubKeyHash: 0x89,
-  scriptHash: 0x00, // TODO set this correctly
-  wif: 0x85
-};
-
-bitcoinjs.bitcoin.networks.crown = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x00,
-  scriptHash: 0x05,
-  wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.dash = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x4c,
-  scriptHash: 0x10,
-  wif: 0xcc
-};
-
-bitcoinjs.bitcoin.networks.maza = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x32,
-  scriptHash: 0x09,
-  wif: 0xe0
-};
-
-bitcoinjs.bitcoin.networks.dashtn = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x043587cf,
-    private: 0x04358394
-  },
-  pubKeyHash: 0x8c,
-  scriptHash: 0x13,
-  wif: 0xef
-};
-
-bitcoinjs.bitcoin.networks.game = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x05,
-  wif: 0xa6
-};
-
-bitcoinjs.bitcoin.networks.namecoin = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x34,
-  scriptHash: 0x00, // TODO set this correctly
-  wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.peercoin = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x00, // TODO set this correctly
-  wif: 0xb7
-};
-
-bitcoinjs.bitcoin.networks.axe = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x10, // TODO set this correctly
-  wif: 0xcc
-};
-
-bitcoinjs.bitcoin.networks.slimcoin = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0xef6adf10,
-    private: 0xef69ea80
-  },
-  pubKeyHash: 0x3f,
-  scriptHash: 0x7d,
-  wif: 0x46
-};
-
-bitcoinjs.bitcoin.networks.slimcointn = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x043587CF,
-    private: 0x04358394
-  },
-  pubKeyHash: 0x6f,
-  scriptHash: 0xc4,
-  wif: 0x57
-};
-
-bitcoinjs.bitcoin.networks.dogecoin = {
-  messagePrefix: '\x19Dogecoin Signed Message:\n',
-  bip32: {
-    public: 0x02facafd,
-    private: 0x02fac398
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x16,
-  wif: 0x9e
-};
-
-bitcoinjs.bitcoin.networks.denarius = {
-  messagePrefix: '\x19Denarius Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x5a,
-  wif: 0x9e
-};
-
-bitcoinjs.bitcoin.networks.neblio = {
-  messagePrefix: '\x18Neblio Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x35,
-  scriptHash: 0x70,
-  wif: 0xb5
-};
-
-bitcoinjs.bitcoin.networks.viacoin = {
-  messagePrefix: '\x18Viacoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x47,
-  scriptHash: 0x21,
-  wif: 0xc7
-};
-
-bitcoinjs.bitcoin.networks.viacointestnet = {
-  messagePrefix: '\x18Viacoin Signed Message:\n',
-  bip32: {
-    public: 0x043587cf,
-    private: 0x04358394
-  },
-  pubKeyHash: 0x7f,
-  scriptHash: 0xc4,
-  wif: 0xff
-};
-
-bitcoinjs.bitcoin.networks.gamerscoin = {
-  messagePrefix: '\x19Gamerscoin Signed Message:\n',
-  bip32: {
-    public: 0x019da462,
-    private: 0x019d9cfe
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x05,
-  wif: 0xA6
-};
-
-bitcoinjs.bitcoin.networks.jumbucks = {
-  messagePrefix: '\x19Jumbucks Signed Message:\n',
-  bip32: {
-    public: 0x037a689a,
-    private: 0x037a6460
-  },
-  pubKeyHash: 0x2b,
-  scriptHash: 0x05,
-  wif: 0xab
-};
-
-bitcoinjs.bitcoin.networks.zetacoin = {
-  messagePrefix: '\x18Zetacoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x50,
-  scriptHash: 0x09,
-  wif: 0xe0
-};
-
-bitcoinjs.bitcoin.networks.myriadcoin = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x32,
-  scriptHash: 0x00, // TODO set this correctly
-  wif: 0xb2
-};
-
-
-bitcoinjs.bitcoin.networks.onixcoin = {
-    messagePrefix: 'unused',
-    bip32: {
-      public: 0x049d7cb2,
-      private: 0x049d7878
-    },
-    pubKeyHash: 0x4B,
-    scriptHash: 0x05,
-    wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.pivx = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x022d2533,
-    private: 0x0221312b
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x0d,
-  wif: 0xd4
-};
-
-bitcoinjs.bitcoin.networks.pivxtestnet = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x3a8061a0,
-    private: 0x3a805837
-  },
-  pubKeyHash: 0x8b,
-  scriptHash: 0x13,
-  wif: 0xef
-};
-
-bitcoinjs.bitcoin.networks.fujicoin = {
-  messagePrefix: '\x19FujiCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x24,
-  scriptHash: 0x10,
-  wif: 0xa4
-};
-
-bitcoinjs.bitcoin.networks.nubits = {
-  messagePrefix: '\x18Nu Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x1a,
-  wif: 0x96,
-};
-
-bitcoinjs.bitcoin.networks.bgold = {
-  messagePrefix: '\x1DBitcoin Gold Signed Message:\n',
-    bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4
-    },
-    pubKeyHash: 38,
-    scriptHash: 23,
-    wif: 128
-};
-
-bitcoinjs.bitcoin.networks.monacoin = {
-    messagePrefix: '\x18Monacoin Signed Message:\n',
-    bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4
-    },
-    pubKeyHash: 0x32,
-    scriptHash: 0x37,
-    wif: 0xb0
-};
-
-bitcoinjs.bitcoin.networks.litecoinXprv = {
-    messagePrefix: '\x19Litecoin Signed Message:\n',
-    bip32: {
-      public: 0x0488b21e,
-      private: 0x0488ade4,
-    },
-    pubKeyHash: 0x30,
-    scriptHash: 0x32,
-    wif: 0xb0
-};
-
-bitcoinjs.bitcoin.networks.komodo = {
-  messagePrefix: '\x18Komodo Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4
-  },
-  pubKeyHash: 0x3c,
-  scriptHash: 0x55,
-  wif: 0xbc
-};
-
-bitcoinjs.bitcoin.networks.blackcoin = {
-  messagePrefix: '\x18BlackCoin Signed Message:\n',
-  bip32: {
-    public: 0x02CFBEDE,
-    private: 0x02CFBF60
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x55,
-  wif: 0x99
-};
-
-bitcoinjs.bitcoin.networks.beetlecoin = {
-  messagePrefix: '\x19Beetlecoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x1A,
-  scriptHash: 0x55,
-  wif: 0x99,
-};
-
-
-bitcoinjs.bitcoin.networks.adcoin = {
-  messagePrefix: '\x18AdCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x17,
-  scriptHash: 0x05,
-  wif: 0xb0,
-};
-
-bitcoinjs.bitcoin.networks.asiacoin = {
-  messagePrefix: '\x18AsiaCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x17,
-  scriptHash: 0x08,
-  wif: 0x97,
-};
-
-bitcoinjs.bitcoin.networks.auroracoin = {
-  messagePrefix: '\x18AuroraCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x17,
-  scriptHash: 0x05,
-  wif: 0x97,
-};
-
-bitcoinjs.bitcoin.networks.bata = {
-  messagePrefix: '\x18Bata Signed Message:\n',
-  bip32: {
-    public: 0xA40C86FA,
-    private: 0xA40B91BD,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x05,
-  wif: 0xa4,
-};
-
-bitcoinjs.bitcoin.networks.belacoin = {
-  messagePrefix: '\x18BelaCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x05,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.atom = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x17,
-  scriptHash: 0x0a,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.bitcoinplus = {
-  messagePrefix: '\x18BitcoinPlus Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x08,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.bitcloud = {
-  messagePrefix: '\x18BitCloud Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x05,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.bitcore = {
-  messagePrefix: '\x18BitCore Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x03,
-  scriptHash: 0x7D,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.bitsend = {
-  messagePrefix: '\x18Bitsend Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x66,
-  scriptHash: 0x05,
-  wif: 0xcc,
-};
-
-bitcoinjs.bitcoin.networks.britcoin = {
-  messagePrefix: '\x18BritCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x55,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.canadaecoin = {
-  messagePrefix: '\x18Canada eCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x05,
-  wif: 0x9c,
-};
-
-bitcoinjs.bitcoin.networks.cannacoin = {
-  messagePrefix: '\x18Cannacoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x05,
-  wif: 0x9c,
-};
-
-bitcoinjs.bitcoin.networks.cryptoescudo = {
-  messagePrefix: '\x18Cryptoescudo Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x05,
-  wif: 0x9c,
-};
-
-bitcoinjs.bitcoin.networks.clubcoin = {
-  messagePrefix: '\x18ClubCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x55,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.compcoin = {
-  messagePrefix: '\x18CompCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x55,
-  wif: 0x9c,
-};
-
-bitcoinjs.bitcoin.networks.crave = {
-  messagePrefix: '\x18DarkNet Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x46,
-  scriptHash: 0x55,
-  wif: 0x99,
-};
-
-bitcoinjs.bitcoin.networks.defcoin = {
-  messagePrefix: '\x18defcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x05,
-  wif: 0x9e,
-};
-
-bitcoinjs.bitcoin.networks.diamond = {
-  messagePrefix: '\x18Diamond Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x5a,
-  scriptHash: 0x08,
-  wif: 0xda,
-};
-
-bitcoinjs.bitcoin.networks.digibyte = {
-  messagePrefix: '\x18DigiByte Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.digitalcoin = {
-  messagePrefix: '\x18Digitalcoin Signed Message:\n',
-  bip32: {
-    public: 0x9e0488B2,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x05,
-  wif: 0x9e,
-};
-
-bitcoinjs.bitcoin.networks.ecoin = {
-  messagePrefix: '\x18eCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x5c,
-  scriptHash: 0x14,
-  wif: 0xdc,
-};
-
-bitcoinjs.bitcoin.networks.edrcoin = {
-  messagePrefix: '\x18EDRcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x5d,
-  scriptHash: 0x1c,
-  wif: 0xdd,
-};
-
-bitcoinjs.bitcoin.networks.egulden = {
-  messagePrefix: '\x18Egulden Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x30,
-  scriptHash: 0x05,
-  wif: 0xb0,
-};
-
-bitcoinjs.bitcoin.networks.einsteinium = {
-  messagePrefix: '\x18Einsteinium Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x21,
-  scriptHash: 0x05,
-  wif: 0xa1,
-};
-
-bitcoinjs.bitcoin.networks.europecoin = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x21,
-  scriptHash: 0x05,
-  wif: 0xa8,
-};
-
-bitcoinjs.bitcoin.networks.exclusivecoin = {
-  messagePrefix: '\x18ExclusiveCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x21,
-  scriptHash: 0x89,
-  wif: 0xa1,
-};
-
-bitcoinjs.bitcoin.networks.feathercoin = {
-  messagePrefix: '\x18Feathercoin Signed Message:\n',
-  bip32: {
-    public: 0x0488BC26,
-    private: 0x0488DAEE,
-  },
-  pubKeyHash: 0x0e,
-  scriptHash: 0x05,
-  wif: 0x8e,
-};
-
-bitcoinjs.bitcoin.networks.firstcoin = {
-  messagePrefix: '\x18FirstCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x23,
-  scriptHash: 0x05,
-  wif: 0xa3,
-};
-
-bitcoinjs.bitcoin.networks.flashcoin = {
-  messagePrefix: '\x18Flashcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x44,
-  scriptHash: 0x82,
-  wif: 0xc4,
-};
-
-bitcoinjs.bitcoin.networks.gcr = {
-  messagePrefix: '\x18GCR Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x61,
-  wif: 0x9a,
-};
-
-bitcoinjs.bitcoin.networks.gobyte = {
-  messagePrefix: '\x18DarkCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x0a,
-  wif: 0xc6,
-};
-
-bitcoinjs.bitcoin.networks.gridcoin = {
-  messagePrefix: '\x18Gridcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x3e,
-  scriptHash: 0x55,
-  wif: 0xbe,
-};
-
-bitcoinjs.bitcoin.networks.gulden = {
-  messagePrefix: '\x18Guldencoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x62,
-  wif: 0x62,
-};
-
-bitcoinjs.bitcoin.networks.helleniccoin = {
-  messagePrefix: '\x18helleniccoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x30,
-  scriptHash: 0x05,
-  wif: 0xb0,
-};
-
-bitcoinjs.bitcoin.networks.hempcoin = {
-  messagePrefix: '\x18Hempcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x28,
-  scriptHash: 0x08,
-  wif: 0xa8,
-};
-
-bitcoinjs.bitcoin.networks.insane = {
-  messagePrefix: '\x18INSaNe Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x66,
-  scriptHash: 0x39,
-  wif: 0x37,
-};
-
-bitcoinjs.bitcoin.networks.iop = {
-  messagePrefix: '\x18IoP Signed Message:\n',
-  bip32: {
-    public: 0x2780915F,
-    private: 0xAE3416F6,
-  },
-  pubKeyHash: 0x75,
-  scriptHash: 0xae,
-  wif: 0x31,
-};
-
-bitcoinjs.bitcoin.networks.ixcoin = {
-  messagePrefix: '\x18Ixcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x8a,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.kobocoin = {
-  messagePrefix: '\x18Kobocoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x23,
-  scriptHash: 0x1c,
-  wif: 0xa3,
-};
-
-bitcoinjs.bitcoin.networks.landcoin = {
-  messagePrefix: '\x18Landcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x30,
-  scriptHash: 0x7a,
-  wif: 0xb0,
-};
-
-bitcoinjs.bitcoin.networks.lbry = {
-  messagePrefix: '\x18LBRYcrd Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x55,
-  scriptHash: 0x7a,
-  wif: 0x1c,
-};
-
-bitcoinjs.bitcoin.networks.linx = {
-  messagePrefix: '\x18LinX Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x4b,
-  scriptHash: 0x05,
-  wif: 0xcb,
-};
-
-bitcoinjs.bitcoin.networks.litecoincash = {
-  messagePrefix: '\x18Litecoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1c,
-  scriptHash: 0x05,
-  wif: 0xb0,
-};
-
-bitcoinjs.bitcoin.networks.lynx = {
-  messagePrefix: '\x18Lynx Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x2d,
-  scriptHash: 0x32,
-  wif: 0xad,
-};
-
-bitcoinjs.bitcoin.networks.megacoin = {
-  messagePrefix: '\x18Megacoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x32,
-  scriptHash: 0x05,
-  wif: 0xB2,
-};
-
-bitcoinjs.bitcoin.networks.minexcoin = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x4b,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.navcoin = {
-  messagePrefix: '\x18Navcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x35,
-  scriptHash: 0x55,
-  wif: 0x96,
-};
-
-bitcoinjs.bitcoin.networks.neoscoin = {
-  messagePrefix: '\x18NeosCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x35,
-  scriptHash: 0x05,
-  wif: 0xb1,
-};
-
-bitcoinjs.bitcoin.networks.neurocoin = {
-  messagePrefix: '\x18PPCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x35,
-  scriptHash: 0x75,
-  wif: 0xb5,
-};
-
-bitcoinjs.bitcoin.networks.newyorkc = {
-  messagePrefix: '\x18newyorkc Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x3c,
-  scriptHash: 0x16,
-  wif: 0xbc,
-};
-
-bitcoinjs.bitcoin.networks.novacoin = {
-  messagePrefix: '\x18NovaCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x08,
-  scriptHash: 0x14,
-  wif: 0x88,
-};
-
-bitcoinjs.bitcoin.networks.nushares = {
-  messagePrefix: '\x18Nu Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x3f,
-  scriptHash: 0x40,
-  wif: 0x95,
-};
-
-bitcoinjs.bitcoin.networks.okcash = {
-  messagePrefix: '\x18OKCash Signed Message:\n',
-  bip32: {
-    public: 0x03CC23D7,
-    private: 0x03CC1C73,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x1c,
-  wif: 0x03,
-};
-
-bitcoinjs.bitcoin.networks.omnicore = {
-  messagePrefix: '\x18Bitcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x00,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.pesobit = {
-  messagePrefix: '\x18Pesobit Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x55,
-  wif: 0xb7,
-};
-
-bitcoinjs.bitcoin.networks.pinkcoin = {
-  messagePrefix: '\x18Pinkcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x03,
-  scriptHash: 0x1c,
-  wif: 0x83,
-};
-
-bitcoinjs.bitcoin.networks.poswcoin = {
-  messagePrefix: '\x18Poswcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x55,
-  wif: 0xb7,
-};
-
-bitcoinjs.bitcoin.networks.potcoin = {
-  messagePrefix: '\x18Potcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x05,
-  wif: 0xb7,
-};
-
-bitcoinjs.bitcoin.networks.putincoin = {
-  messagePrefix: '\x18PutinCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x14,
-  wif: 0xb7,
-};
-
-bitcoinjs.bitcoin.networks.ravencoin = {
-  messagePrefix: '\x16Raven Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x3c,
-  scriptHash: 0x7a,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.reddcoin = {
-  messagePrefix: '\x18Reddcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x3d,
-  scriptHash: 0x05,
-  wif: 0xbd,
-};
-
-bitcoinjs.bitcoin.networks.revolutionvr = {
-  messagePrefix: '\x18Voxels Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x46,
-  scriptHash: 0x05,
-  wif: 0xc6,
-};
-
-bitcoinjs.bitcoin.networks.rubycoin = {
-  messagePrefix: '\x18Rubycoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x3c,
-  scriptHash: 0x55,
-  wif: 0xbc,
-};
-
-bitcoinjs.bitcoin.networks.safecoin = {
-  messagePrefix: '\x18Safecoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x3d,
-  scriptHash: 0x56,
-  wif: 0xbd,
-};
-
-bitcoinjs.bitcoin.networks.salus = {
-messagePrefix: '\x18Salus Signed Message:\n',
-bip32: {
-  public: 0x0488B21E,
-  private: 0x0488ADE4,
-},
-pubKeyHash: 0x3f,
-scriptHash: 0xc4,
-wif: 0xbf,
-};
-
-bitcoinjs.bitcoin.networks.smileycoin = {
-  messagePrefix: '\x18Smileycoin Signed Message:\n',
-  bip32: {
-    public: 0x1E562D9A,
-    private: 0x1E5631BC,
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x05,
-  wif: 0x05,
-};
-
-bitcoinjs.bitcoin.networks.solarcoin = {
-  messagePrefix: '\x18SolarCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x12,
-  scriptHash: 0x05,
-  wif: 0x92,
-};
-
-bitcoinjs.bitcoin.networks.stash = {
-  messagePrefix: '\x18Stash Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4
-  },
-  pubKeyHash: 0x4c,
-  scriptHash: 0x10,
-  wif: 0xcc
-};
-
-bitcoinjs.bitcoin.networks.stashtn = {
-  messagePrefix: '\x18Stash Test Signed Message:\n',
-  bip32: {
-    public: 0x043587cf,
-    private: 0x04358394
-  },
-  pubKeyHash: 0x8c,
-  scriptHash: 0x13,
-  wif: 0xef
-};
-
-bitcoinjs.bitcoin.networks.stratis = {
-  messagePrefix: '\x18Stratis Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x3f,
-  scriptHash: 0x7d,
-  wif: 0xbf,
-};
-
-bitcoinjs.bitcoin.networks.stratistest = {
-  messagePrefix: '\x18Stratis Test Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x41,
-  scriptHash: 0x7d,
-  wif: 0xbf,
-};
-
-bitcoinjs.bitcoin.networks.syscoin = {
-  messagePrefix: '\x18Syscoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x3f,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-
-bitcoinjs.bitcoin.networks.toa = {
-  messagePrefix: '\x18TOA Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x41,
-  scriptHash: 0x17,
-  wif: 0xc1,
-};
-
-bitcoinjs.bitcoin.networks.ultimatesecurecash = {
-  messagePrefix: '\x18UltimateSecureCash Signed Message:\n',
-  bip32: {
-    public: 0xEE80286A,
-    private: 0xEE8031E8,
-  },
-  pubKeyHash: 0x44,
-  scriptHash: 0x7d,
-  wif: 0xbf,
-};
-
-bitcoinjs.bitcoin.networks.unobtanium = {
-  messagePrefix: '\x18Unobtanium Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x82,
-  scriptHash: 0x1e,
-  wif: 0xe0,
-};
-
-bitcoinjs.bitcoin.networks.vcash = {
-  messagePrefix: '\x18Vcash Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x47,
-  scriptHash: 0x08,
-  wif: 0xc7,
-};
-
-bitcoinjs.bitcoin.networks.verge = {
-  messagePrefix: '\x18VERGE Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x1e,
-  scriptHash: 0x21,
-  wif: 0x9e,
-};
-
-bitcoinjs.bitcoin.networks.vertcoin = {
-  messagePrefix: '\x18Vertcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x47,
-  scriptHash: 0x05,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.vivo = {
-  messagePrefix: '\x18DarkCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x46,
-  scriptHash: 0x0a,
-  wif: 0xc6,
-};
-
-bitcoinjs.bitcoin.networks.vpncoin = {
-  messagePrefix: '\x18VpnCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x47,
-  scriptHash: 0x05,
-  wif: 0xc7,
-};
-
-bitcoinjs.bitcoin.networks.whitecoin = {
-  messagePrefix: '\x18Whitecoin Signed Message:\n',
-  bip32: {
-    public: 0x04887F1E,
-    private: 0x048894ED,
-  },
-  pubKeyHash: 0x49,
-  scriptHash: 0x57,
-  wif: 0xc9,
-};
-
-bitcoinjs.bitcoin.networks.wincoin = {
-  messagePrefix: '\x18WinCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488b21e,
-    private: 0x0488ade4,
-  },
-  pubKeyHash: 0x49,
-  scriptHash: 0x1c,
-  wif: 0xc9,
-};
-
-bitcoinjs.bitcoin.networks.zcoin = {
-  messagePrefix: '\x18Zcoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x52,
-  scriptHash: 0x07,
-  wif: 0xd2,
-};
-
-bitcoinjs.bitcoin.networks.zcash = {
-  messagePrefix: '\x18Zcash Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1CB8,
-  scriptHash: 0x1CBD,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.xuez = {
-  messagePrefix: 'unused',
-  bip32: {
-    public: 0x022d2533,
-    private: 0x0221312b
-  },
-  pubKeyHash: 0x4b,
-  scriptHash: 0x12,
-  wif: 0xd4
-};
-
-bitcoinjs.bitcoin.networks.bitcoinprivate = {
-  messagePrefix: '\x18BitcoinPrivate Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1325,
-  scriptHash: 0x13AF,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.bitcoinz = {
-  messagePrefix: '\x18BitcoinZ Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1CB8,
-  scriptHash: 0x1CBD,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.hush = {
-  messagePrefix: '\x18Hush Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1CB8,
-  scriptHash: 0x1CBD,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.zclassic = {
-  messagePrefix: '\x18Zcash Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x1CB8,
-  scriptHash: 0x1CBD,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.zencash = {
-  messagePrefix: '\x18Zcash Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x2089,
-  scriptHash: 0x2096,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.energi = {
-  messagePrefix: 'DarkCoin Signed Message:\n',
-  bip32: {
-    public: 0x03B8C856,
-    private: 0xD7DC6E9F,
-  },
-  pubKeyHash: 0x21,
-  scriptHash: 0x35,
-  wif: 0x6a,
-};
-
-bitcoinjs.bitcoin.networks.exchangecoin = {
-  messagePrefix: 'ExchangeCoin Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x21B9,
-  scriptHash: 0x34AF,
-  wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.artax = {
-  messagePrefix: '\x18Artax Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x17,
-  scriptHash: 0x1CBD,
-  wif: 0x97,
-};
-
-bitcoinjs.bitcoin.networks.bitcoingreen = {
-  messagePrefix: '\x18BitcoinGreen Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE4,
-  },
-  pubKeyHash: 0x26,
-  scriptHash: 0x1CBD,
-  wif:  0x2E,
-};
-
-bitcoinjs.bitcoin.networks.anon = {
-	messagePrefix: '\x18ANON Signed Message:\n',
-	bip32: {
-		public: 0x0488b21e,
-		private: 0x0488ade4
-	},
-	pubKeyHash: 0x0582,
-	scriptHash: 0x5389,
-	wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.projectcoin = {
-  messagePrefix: '\x18ProjectCoin Signed Message:\n',
-  bip32: {
-    public: 0x022D2533,
-    private: 0x0221312B,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x08,
-  wif:  0x75,
-};
-
-bitcoinjs.bitcoin.networks.phore = {
-  messagePrefix: '\x18Phore Signed Message:\n',
-  bip32: {
-    public: 0x022D2533,
-    private: 0x0221312B,
-  },
-  pubKeyHash: 0x37,
-  scriptHash: 0x0D,
-  wif:  0xD4,
-};
-
-bitcoinjs.bitcoin.networks.blocknode = {
-  messagePrefix: '\x18Blocknode Signed Message:\n',
-  bip32: {
-	public: 0x0488b21e,
-	private: 0x0488ade4
-  },
-  pubKeyHash: 0x19,
-  scriptHash: 0x3F,
-  wif:  0x4b,
-};
-
-bitcoinjs.bitcoin.networks.blocknode_testnet = {
-  messagePrefix: '\x18Blocknode Testnet Signed Message:\n',
-  bip32: {
-	public: 0x043587cf,
-	private: 0x04358394
-  },
-  pubKeyHash: 0x55,
-  scriptHash: 0x7d,
-  wif:  0x89,
-};
-
-bitcoinjs.bitcoin.networks.litecoinz = {
-  messagePrefix: '\x18LitecoinZ Signed Message:\n',
-  bip32: {
-    public: 0x0488B21E,
-    private: 0x0488ADE3,
-  },
-  pubKeyHash: 0x0AB3,
-  scriptHash: 0x0AB8,
-  wif:  0x80,
-};</script>
         <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.bitcoinjsBip38 = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 var asn1 = exports;
 
@@ -60966,7 +59466,7 @@ module.exports = function privateDecrypt(private_key, enc, reverse) {
   } else {
     padding = 4;
   }
-  
+
   var key = parseKeys(private_key);
   var k = key.modulus.byteLength();
   if (enc.length > k || new bn(enc).cmp(key.modulus) >= 0) {
@@ -65533,13 +64033,13 @@ Script.prototype.runInContext = function (context) {
     if (!(context instanceof Context)) {
         throw new TypeError("needs a 'context' argument.");
     }
-    
+
     var iframe = document.createElement('iframe');
     if (!iframe.style) iframe.style = {};
     iframe.style.display = 'none';
-    
+
     document.body.appendChild(iframe);
-    
+
     var win = iframe.contentWindow;
     var wEval = win.eval, wExecScript = win.execScript;
 
@@ -65548,7 +64048,7 @@ Script.prototype.runInContext = function (context) {
         wExecScript.call(win, 'null');
         wEval = win.eval;
     }
-    
+
     forEach(Object_keys(context), function (key) {
         win[key] = context[key];
     });
@@ -65557,11 +64057,11 @@ Script.prototype.runInContext = function (context) {
             win[key] = context[key];
         }
     });
-    
+
     var winKeys = Object_keys(win);
 
     var res = wEval.call(win, this.code);
-    
+
     forEach(Object_keys(win), function (key) {
         // Avoid copying circular objects like `top` and `window` by only
         // updating existing context properties or new properties in the `win`
@@ -65576,9 +64076,9 @@ Script.prototype.runInContext = function (context) {
             defineProp(context, key, win[key]);
         }
     });
-    
+
     document.body.removeChild(iframe);
-    
+
     return res;
 };
 
@@ -70762,23 +69262,23 @@ module.exports = Sha512
 
 // p2wpkh
 
-bitcoinjs.bitcoin.networks.bitcoin.p2wpkh = {
-    baseNetwork: "bitcoin",
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'bc',
+bitcoinjs.bitcoin.networks.groestlcoin.p2wpkh = {
+    baseNetwork: "groestlcoin",
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'grs',
     bip32: {
         public: 0x04b24746,
         private: 0x04b2430c
     },
-    pubKeyHash: 0x00,
+    pubKeyHash: 0x24,
     scriptHash: 0x05,
     wif: 0x80
 };
 
-bitcoinjs.bitcoin.networks.testnet.p2wpkh = {
-    baseNetwork: "testnet",
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'tb',
+bitcoinjs.bitcoin.networks.groestlcointestnet.p2wpkh = {
+    baseNetwork: "groestlcointestnet",
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'tgrs',
     bip32: {
         public: 0x045f1cf6,
         private: 0x045f18bc
@@ -70790,23 +69290,23 @@ bitcoinjs.bitcoin.networks.testnet.p2wpkh = {
 
 // p2wpkh in p2sh
 
-bitcoinjs.bitcoin.networks.bitcoin.p2wpkhInP2sh = {
-    baseNetwork: "bitcoin",
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'bc',
+bitcoinjs.bitcoin.networks.groestlcoin.p2wpkhInP2sh = {
+    baseNetwork: "groestlcoin",
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'grs',
     bip32: {
         public: 0x049d7cb2,
         private: 0x049d7878
     },
-    pubKeyHash: 0x00,
+    pubKeyHash: 0x24,
     scriptHash: 0x05,
     wif: 0x80
 };
 
-bitcoinjs.bitcoin.networks.testnet.p2wpkhInP2sh = {
-    baseNetwork: "testnet",
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'tb',
+bitcoinjs.bitcoin.networks.groestlcointestnet.p2wpkhInP2sh = {
+    baseNetwork: "groestlcointestnet",
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'tgrs',
     bip32: {
         public: 0x044a5262,
         private: 0x044a4e28
@@ -70814,160 +69314,6 @@ bitcoinjs.bitcoin.networks.testnet.p2wpkhInP2sh = {
     pubKeyHash: 0x6f,
     scriptHash: 0xc4,
     wif: 0xef
-};
-
-bitcoinjs.bitcoin.networks.litecoin.p2wpkh = {
-    baseNetwork: "litecoin",
-    messagePrefix: '\x19Litecoin Signed Message:\n',
-    bech32: 'ltc',
-    bip32: {
-        public: 0x04b24746,
-        private: 0x04b2430c
-    },
-    pubKeyHash: 0x30,
-    scriptHash: 0x32,
-    wif: 0xb0
-};
-
-bitcoinjs.bitcoin.networks.litecoin.p2wpkhInP2sh = {
-    baseNetwork: "litecoin",
-    messagePrefix: '\x19Litecoin Signed Message:\n',
-    bech32: 'ltc',
-    bip32: {
-        public: 0x01b26ef6,
-        private: 0x01b26792
-    },
-    pubKeyHash: 0x30,
-    scriptHash: 0x32,
-    wif: 0xb0
-};
-
-bitcoinjs.bitcoin.networks.fujicoin.p2wpkh = {
-    baseNetwork: "fujicoin",
-    messagePrefix: '\x19FujiCoin Signed Message:\n',
-    bech32: 'fc',
-    bip32: {
-        public: 0x04b24746,
-        private: 0x04b2430c
-    },
-    pubKeyHash: 0x24,
-    scriptHash: 0x10,
-    wif: 0xa4
-};
-
-bitcoinjs.bitcoin.networks.fujicoin.p2wpkhInP2sh = {
-    baseNetwork: "fujicoin",
-    messagePrefix: '\x19FujiCoin Signed Message:\n',
-    bech32: 'fc',
-    bip32: {
-        public: 0x049d7cb2,
-        private: 0x049d7878
-    },
-    pubKeyHash: 0x24,
-    scriptHash: 0x10,
-    wif: 0xa4
-};
-
-bitcoinjs.bitcoin.networks.vertcoin.p2wpkh = {
-    baseNetwork: "vertcoin",
-    messagePrefix: '\x18Vertcoin Signed Message:\n',
-    bech32: 'vtc',
-    bip32: {
-        public: 0x0488b21e,
-        private: 0x0488ade4
-    },
-    pubKeyHash: 71,
-    scriptHash: 5,
-    wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.vertcoin.p2wpkhInP2sh = {
-    baseNetwork: "vertcoin",
-    messagePrefix: '\x18Vertcoin Signed Message:\n',
-    bip32: {
-        public: 0x0488b21e,
-        private: 0x0488ade4
-    },
-    pubKeyHash: 71,
-    scriptHash: 5,
-    wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.bgold.p2wpkh = {
-    baseNetwork: "bgold",
-    messagePrefix: '\x1DBitcoin Gold Signed Message:\n',
-    bech32: 'btg',
-    bip32: {
-        public: 0x04b24746,
-        private: 0x04b2430c
-    },
-    pubKeyHash: 0x26,
-    scriptHash: 0x17,
-    wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.bgold.p2wpkhInP2sh = {
-    baseNetwork: "bgold",
-    messagePrefix: '\x1DBitcoin Gold Signed Message:\n',
-    bech32: 'btg',
-    bip32: {
-        public: 0x049d7cb2,
-        private: 0x049d7878
-    },
-    pubKeyHash: 0x26,
-    scriptHash: 0x17,
-    wif: 0x80,
-};
-
-bitcoinjs.bitcoin.networks.digibyte.p2wpkh = {
-    baseNetwork: "digibyte",
-    messagePrefix: '\x18DigiByte Signed Message:\n',
-    bech32: 'dgb',
-    bip32: {
-        public: 0x0488B21E,
-        private: 0x0488ADE4
-    },
-    pubKeyHash: 0x1e,
-    scriptHash: 0x3f,
-    wif: 0x80
-};
-
-bitcoinjs.bitcoin.networks.digibyte.p2wpkhInP2sh = {
-    baseNetwork: "digibyte",	
-    messagePrefix: '\x18DigiByte Signed Message:\n',
-    bech32: 'dgb',
-    bip32: {
-        public: 0x0488B21E,
-        private: 0x0488ADE4
-    },
-    pubKeyHash: 0x1e,
-    scriptHash: 0x3f,
-    wif: 0x80
-};
-    bitcoinjs.bitcoin.networks.deimos.p2wpkh = {
-    baseNetwork: "deimos",
-    messagePrefix: '\x18Deimos Signed Message:\n',
-    bech32: 'dei',
-    bip32: {
-        public: 0x0488B21E,
-        private: 0x0488ADE4
-    },
-    pubKeyHash: 0x1f,
-    scriptHash: 0x21,
-    wif: 0x8a
-};
-
-bitcoinjs.bitcoin.networks.deimos.p2wpkhInP2sh = {
-    baseNetwork: "deimos",	
-    messagePrefix: '\x18Deimos Signed Message:\n',
-    bech32: 'dei',
-    bip32: {
-        public: 0x0488B21E,
-        private: 0x0488ADE4
-    },
-    pubKeyHash: 0x1f,
-    scriptHash: 0x21,
-    wif: 0x8a
 };
 })();
 </script>
@@ -89741,8 +88087,8 @@ module.exports = function stripHexPrefix(str) {
 
 function convertRipplePriv(priv)   {
         return window.basex('123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz').decode(priv).toString("hex").slice(2,66)
-}   
-      
+}
+
 </script>
         <script>(function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.bchaddr = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 // base-x encoding
@@ -93102,7 +91448,7 @@ var validate = validation.validate;
 
 /**
  * Encodes a hash from a given type into a Bitcoin Cash address with the given prefix.
- * 
+ *
  * @static
  * @param {string} prefix Network prefix. E.g.: 'bitcoincash'.
  * @param {string} type Type of address to generate. Either 'P2PKH' or 'P2SH'.
@@ -93124,7 +91470,7 @@ function encode(prefix, type, hash) {
 
 /**
  * Decodes the given address into its constituting prefix, type and hash. See [#encode()]{@link encode}.
- * 
+ *
  * @static
  * @param {string} address Address to decode. E.g.: 'bitcoincash:qpm2qsznhks23z7629mms6s4cwef74vcwvy22gdx6a'.
  * @returns {object}
@@ -93169,7 +91515,7 @@ var VALID_PREFIXES = ['bitcoincash', 'bchtest', 'bchreg'];
  * and is one of 'bitcoincash', 'bchtest', or 'bchreg'.
  *
  * @private
- * @param {string} prefix 
+ * @param {string} prefix
  * @returns {boolean}
  */
 function isValidPrefix(prefix) {
@@ -93181,7 +91527,7 @@ function isValidPrefix(prefix) {
  * of the address' checksum.
  *
  * @private
- * @param {string} prefix Network prefix. E.g.: 'bitcoincash'. 
+ * @param {string} prefix Network prefix. E.g.: 'bitcoincash'.
  * @returns {Uint8Array}
  */
 function prefixToUint5Array(prefix) {
@@ -93340,8 +91686,8 @@ function fromUint5Array(data) {
  * Returns the concatenation a and b.
  *
  * @private
- * @param {Uint8Array} a 
- * @param {Uint8Array} b 
+ * @param {Uint8Array} a
+ * @param {Uint8Array} b
  * @returns {Uint8Array}
  * @throws {ValidationError}
  */
@@ -93379,7 +91725,7 @@ function polymod(data) {
 /**
  * Verify that the payload has not been corrupted by checking that the
  * checksum is valid.
- * 
+ *
  * @private
  * @param {string} prefix Network prefix. E.g.: 'bitcoincash'.
  * @param {Uint8Array} payload Array of 5-bit integers containing the address' payload.
@@ -99100,13 +97446,13 @@ var sjcl = {
 
   /** @namespace Key exchange functions.  Right now only SRP is implemented. */
   keyexchange: {},
-  
+
   /** @namespace Block cipher modes of operation. */
   mode: {},
 
   /** @namespace Miscellaneous.  HMAC and PBKDF2. */
   misc: {},
-  
+
   /**
    * @namespace Bit array encoders and decoders.
    *
@@ -99117,7 +97463,7 @@ var sjcl = {
    * the method names are "fromBits" and "toBits".
    */
   codec: {},
-  
+
   /** @namespace Exceptions. */
   exception: {
     /** @constructor Ciphertext is corrupt. */
@@ -99125,13 +97471,13 @@ var sjcl = {
       this.toString = function() { return "CORRUPT: "+this.message; };
       this.message = message;
     },
-    
+
     /** @constructor Invalid parameter. */
     invalid: function(message) {
       this.toString = function() { return "INVALID: "+this.message; };
       this.message = message;
     },
-    
+
     /** @constructor Bug or missing feature in SJCL. @constructor */
     bug: function(message) {
       this.toString = function() { return "BUG: "+this.message; };
@@ -99233,7 +97579,7 @@ sjcl.bitArray = {
     if (a1.length === 0 || a2.length === 0) {
       return a1.concat(a2);
     }
-    
+
     var last = a1[a1.length-1], shift = sjcl.bitArray.getPartial(last);
     if (shift === 32) {
       return a1.concat(a2);
@@ -99319,7 +97665,7 @@ sjcl.bitArray = {
   _shiftRight: function (a, shift, carry, out) {
     var i, last2=0, shift2;
     if (out === undefined) { out = []; }
-    
+
     for (; shift >= 32; shift -= 32) {
       out.push(carry);
       carry = 0;
@@ -99327,7 +97673,7 @@ sjcl.bitArray = {
     if (shift === 0) {
       return out.concat(a);
     }
-    
+
     for (i=0; i<a.length; i++) {
       out.push(carry | a[i]>>>shift);
       carry = a[i] << (32-shift);
@@ -99337,7 +97683,7 @@ sjcl.bitArray = {
     out.push(sjcl.bitArray.partial(shift+shift2 & 31, (shift + shift2 > 32) ? carry : out.pop(),1));
     return out;
   },
-  
+
   /** xor a block of 4 words together.
    * @private
    */
@@ -99369,7 +97715,7 @@ sjcl.bitArray = {
  * @author Mike Hamburg
  * @author Dan Boneh
  */
- 
+
 /** @namespace UTF-8 strings */
 sjcl.codec.utf8String = {
   /** Convert from a bitArray to a UTF-8 string. */
@@ -99384,7 +97730,7 @@ sjcl.codec.utf8String = {
     }
     return decodeURIComponent(escape(out));
   },
-  
+
   /** Convert from a UTF-8 string to a bitArray. */
   toBits: function (str) {
     str = unescape(encodeURIComponent(str));
@@ -99486,7 +97832,7 @@ sjcl.hash.sha512.prototype = {
    * @constant
    */
   blockSize: 1024,
-   
+
   /**
    * Reset the hash state.
    * @return this
@@ -99497,7 +97843,7 @@ sjcl.hash.sha512.prototype = {
     this._length = 0;
     return this;
   },
-  
+
   /**
    * Input several words to the hash.
    * @param {bitArray|String} data the data to hash.
@@ -99515,7 +97861,7 @@ sjcl.hash.sha512.prototype = {
     }
     return this;
   },
-  
+
   /**
    * Complete hashing and output the hash value.
    * @return {bitArray} The hash value, an array of 16 big-endian words.
@@ -99810,12 +98156,12 @@ sjcl.misc.hmac = function (key, Hash) {
   if (key.length > bs) {
     key = Hash.hash(key);
   }
-  
+
   for (i=0; i<bs; i++) {
     exKey[0][i] = key[i]^0x36363636;
     exKey[1][i] = key[i]^0x5C5C5C5C;
   }
-  
+
   this._baseHash[0].update(exKey[0]);
   this._baseHash[1].update(exKey[1]);
   this._resultHash = new Hash(this._baseHash[0]);
@@ -99878,34 +98224,34 @@ sjcl.misc.hmac.prototype.digest = function () {
  */
 sjcl.misc.pbkdf2 = function (password, salt, count, length, Prff) {
   count = count || 1000;
-  
+
   if (length < 0 || count < 0) {
     throw sjcl.exception.invalid("invalid params to pbkdf2");
   }
-  
+
   if (typeof password === "string") {
     password = sjcl.codec.utf8String.toBits(password);
   }
-  
+
   if (typeof salt === "string") {
     salt = sjcl.codec.utf8String.toBits(salt);
   }
-  
+
   Prff = Prff || sjcl.misc.hmac;
-  
+
   var prf = new Prff(password),
       u, ui, i, j, k, out = [], b = sjcl.bitArray;
 
   for (k = 1; 32 * out.length < (length || 1); k++) {
     u = ui = prf.encrypt(b.concat(salt,[k]));
-    
+
     for (i=1; i<count; i++) {
       ui = prf.encrypt(ui);
       for (j=0; j<ui.length; j++) {
         u[j] ^= ui[j];
       }
     }
-    
+
     out = out.concat(u);
   }
 
@@ -99964,7 +98310,7 @@ sjcl.hash.sha256.prototype = {
    * @constant
    */
   blockSize: 512,
-   
+
   /**
    * Reset the hash state.
    * @return this
@@ -99975,7 +98321,7 @@ sjcl.hash.sha256.prototype = {
     this._length = 0;
     return this;
   },
-  
+
   /**
    * Input several words to the hash.
    * @param {bitArray|String} data the data to hash.
@@ -99993,7 +98339,7 @@ sjcl.hash.sha256.prototype = {
     }
     return this;
   },
-  
+
   /**
    * Complete hashing and output the hash value.
    * @return {bitArray} The hash value, an array of 8 big-endian words.
@@ -100003,12 +98349,12 @@ sjcl.hash.sha256.prototype = {
 
     // Round out and push the buffer
     b = sjcl.bitArray.concat(b, [sjcl.bitArray.partial(1,1)]);
-    
+
     // Round out the buffer to a multiple of 16 words, less the 2 length words.
     for (i = b.length + 2; i & 15; i++) {
       b.push(0);
     }
-    
+
     // append the length
     b.push(Math.floor(this._length / 0x100000000));
     b.push(this._length | 0);
@@ -100029,7 +98375,7 @@ sjcl.hash.sha256.prototype = {
   /*
   _init:[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19],
   */
-  
+
   /**
    * The SHA-256 hash key, to be precomputed.
    * @private
@@ -100064,7 +98410,7 @@ sjcl.hash.sha256.prototype = {
           continue outer;
         }
       }
-      
+
       if (i<8) {
         this._init[i] = frac(Math.pow(prime, 1/2));
       }
@@ -100072,13 +98418,13 @@ sjcl.hash.sha256.prototype = {
       i++;
     }
   },
-  
+
   /**
    * Perform one cycle of SHA-256.
    * @param {bitArray} words one block of words.
    * @private
    */
-  _block:function (words) {  
+  _block:function (words) {
     var i, tmp, a, b,
       w = words.slice(0),
       h = this._h,
@@ -100106,13 +98452,13 @@ sjcl.hash.sha256.prototype = {
       } else {
         a   = w[(i+1 ) & 15];
         b   = w[(i+14) & 15];
-        tmp = w[i&15] = ((a>>>7  ^ a>>>18 ^ a>>>3  ^ a<<25 ^ a<<14) + 
+        tmp = w[i&15] = ((a>>>7  ^ a>>>18 ^ a>>>3  ^ a<<25 ^ a<<14) +
                          (b>>>17 ^ b>>>19 ^ b>>>10 ^ b<<15 ^ b<<13) +
                          w[i&15] + w[(i+9) & 15]) | 0;
       }
-      
+
       tmp = (tmp + h7 + (h4>>>6 ^ h4>>>11 ^ h4>>>25 ^ h4<<26 ^ h4<<21 ^ h4<<7) +  (h6 ^ h4&(h5^h6)) + k[i]); // | 0;
-      
+
       // shift register
       h7 = h6; h6 = h5; h5 = h4;
       h4 = h3 + tmp | 0;
@@ -105902,7 +104248,7 @@ window.Entropy = new (function() {
     DOM.phrase = $(".phrase");
     DOM.recovered = $(".recovered")
     DOM.addressesRecovered = $(".addresses-recovery")
- 
+
     DOM.passphrase = $(".passphrase");
     DOM.generateContainer = $(".generate-container");
     DOM.generate = $(".generate");
@@ -105980,10 +104326,10 @@ window.Entropy = new (function() {
         // Events
 
         DOM.phrase.on("input", delayedPhraseChanged);
- 
+
         setQrEvents(DOM.showQrEls);
         hideValidationError();
- 
+
     }
 
     // Event handlers
@@ -106018,8 +104364,8 @@ window.Entropy = new (function() {
         $('.addresses-recovery tr').remove();
         DerivePublicAddresses(phrase)
      }
- 
- 
+
+
     // Private methods
 
 
@@ -106098,14 +104444,14 @@ window.Entropy = new (function() {
                 return word + " not in wordlist, did you mean " + nearestWord + "?";
             }
         }
- 
+
         if (unknownWordIndex != -1) {
             wordBruteforce(words, unknownWordIndex);
             return false;
         }
         // Check the words are valid
         var properPhrase = wordArrayToPhrase(words);
- 
+
         var isValid = mnemonic.check(properPhrase);
         if (!isValid) {
             return "Invalid mnemonic";
@@ -106119,7 +104465,7 @@ window.Entropy = new (function() {
         $('.addresses-recovery tr').remove();
         for (var i = 0; i < WORDLISTS[language].length; i++){
             words[index] = (WORDLISTS[language])[i]; //bruteforce word[index]
- 
+
             phrase = mnemonic.joinWords(words);
             isValid = mnemonic.check(phrase);
             if (isValid) {
@@ -106131,14 +104477,14 @@ window.Entropy = new (function() {
         }
  /* check addresses balance with API
   var ethAddr=[]
- 
+
  //Iterate all td's in column 4
  $('.addresses-recovery tr').each( function(){
                                               //add item to array
                                               ethAddr.push( $('td', this).eq(4).text().trimLeft().trimRight()); //remove white spaces
                                               });
  var btcAddr=[]
- 
+
  //Iterate all td's in columns 1-3
  for (var i = 1; i < 4; i++){
     $('.addresses-recovery tr').each( function(){
@@ -106163,42 +104509,37 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
  {
      calcBip32RootKeyFromSeed(phrase, '');
      console.log(bip32RootKey.toBase58());
- 
-     var path44 = "m/44'/0'/0'/0";
+
+     var path44 = "m/44'/17'/0'/0";
      var address44 = DerivePublicAddress(path44)
-     var path49 = "m/49'/0'/0'/0";
+     var path49 = "m/49'/17'/0'/0";
      var address49 = DerivePublicAddress(path49)
-     var path84 = "m/84'/0'/0'/0";
+     var path84 = "m/84'/17'/0'/0";
      var address84 = DerivePublicAddress(path84)
-     var pathEth = "m/44'/60'/0'/0";
-     var addressEth = DerivePublicAddress(pathEth)
- 
- 
- 
- 
+
         var html = '';
          html = '<tr><td>' + word +
-         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'btc') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'btc') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'btc')  + '&nbsp</td><td>&nbsp' + createAddressUrl(addressEth, 'eth') + '&nbsp</td></tr>';
- 
+         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs')  + '&nbsp</td><td>&nbsp' + '&nbsp</td></tr>';
+
  DOM.addressesRecovered.append(html);
- 
+
 
  }
- 
+
  function createAddressUrl(address, coinType)
  {
-    str = '<a href="https://www.blockchain.com/' + coinType + '/address/' + address + '">' + address + '</a>';
+    str = '<a href="https://chainz.cryptoid.info/' + coinType + '/address.dws?' + address + '">' + address + '</a>';
     return str;
  }
- 
- 
+
+
  function DerivePublicAddress(path) { //based on calculateValues
 
     bip_ver = parseInt((path.split("/")[1]).replace("'",""));
     coin = parseInt((path.split("/")[2]).replace("'",""));
     console.log(bip_ver)
             var key = derive(path)
- 
+
             var keyPair = key.keyPair;
             // get address
             var address = keyPair.getAddress().toString();
@@ -106214,10 +104555,10 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
             var checksumAddress = ethUtil.toChecksumAddress(hexAddress);
             return address = ethUtil.addHexPrefix(checksumAddress);
             }
- 
+
             // Segwit addresses are different
- 
- 
+
+
             if ((bip_ver == 141) || (bip_ver == 84))   {
             var keyhash = bitcoinjs.bitcoin.crypto.hash160(key.getPublicKeyBuffer());
             var scriptpubkey = bitcoinjs.bitcoin.script.witnessPubKeyHash.output.encode(keyhash);
@@ -106237,7 +104578,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
      {
         var bip32ExtendedKey = calcBip32ExtendedKey(path);
         var key = bip32ExtendedKey.derive(0); //not hardened
- 
+
         return key;
      }
 
@@ -106247,7 +104588,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
 
     function showPending() {
         DOM.feedback
-            .text("Calculating...")
+            .text("Calculating...This can take several minutes")
             .show();
     }
 
@@ -106454,7 +104795,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
         return s;
     }
 
- 
+
 
 
 

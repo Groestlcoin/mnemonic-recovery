@@ -46,7 +46,7 @@
     DOM.phrase = $(".phrase");
     DOM.recovered = $(".recovered")
     DOM.addressesRecovered = $(".addresses-recovery")
- 
+
     DOM.passphrase = $(".passphrase");
     DOM.generateContainer = $(".generate-container");
     DOM.generate = $(".generate");
@@ -124,10 +124,10 @@
         // Events
 
         DOM.phrase.on("input", delayedPhraseChanged);
- 
+
         setQrEvents(DOM.showQrEls);
         hideValidationError();
- 
+
     }
 
     // Event handlers
@@ -162,8 +162,8 @@
         $('.addresses-recovery tr').remove();
         DerivePublicAddresses(phrase)
      }
- 
- 
+
+
     // Private methods
 
 
@@ -242,14 +242,14 @@
                 return word + " not in wordlist, did you mean " + nearestWord + "?";
             }
         }
- 
+
         if (unknownWordIndex != -1) {
             wordBruteforce(words, unknownWordIndex);
             return false;
         }
         // Check the words are valid
         var properPhrase = wordArrayToPhrase(words);
- 
+
         var isValid = mnemonic.check(properPhrase);
         if (!isValid) {
             return "Invalid mnemonic";
@@ -263,7 +263,7 @@
         $('.addresses-recovery tr').remove();
         for (var i = 0; i < WORDLISTS[language].length; i++){
             words[index] = (WORDLISTS[language])[i]; //bruteforce word[index]
- 
+
             phrase = mnemonic.joinWords(words);
             isValid = mnemonic.check(phrase);
             if (isValid) {
@@ -275,14 +275,14 @@
         }
  /* check addresses balance with API
   var ethAddr=[]
- 
+
  //Iterate all td's in column 4
  $('.addresses-recovery tr').each( function(){
                                               //add item to array
                                               ethAddr.push( $('td', this).eq(4).text().trimLeft().trimRight()); //remove white spaces
                                               });
  var btcAddr=[]
- 
+
  //Iterate all td's in columns 1-3
  for (var i = 1; i < 4; i++){
     $('.addresses-recovery tr').each( function(){
@@ -307,42 +307,37 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
  {
      calcBip32RootKeyFromSeed(phrase, '');
      console.log(bip32RootKey.toBase58());
- 
-     var path44 = "m/44'/0'/0'/0";
+
+     var path44 = "m/44'/17'/0'/0";
      var address44 = DerivePublicAddress(path44)
-     var path49 = "m/49'/0'/0'/0";
+     var path49 = "m/49'/17'/0'/0";
      var address49 = DerivePublicAddress(path49)
-     var path84 = "m/84'/0'/0'/0";
+     var path84 = "m/84'/17'/0'/0";
      var address84 = DerivePublicAddress(path84)
-     var pathEth = "m/44'/60'/0'/0";
-     var addressEth = DerivePublicAddress(pathEth)
- 
- 
- 
- 
+
         var html = '';
          html = '<tr><td>' + word +
-         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'btc') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'btc') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'btc')  + '&nbsp</td><td>&nbsp' + createAddressUrl(addressEth, 'eth') + '&nbsp</td></tr>';
- 
+         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs') + '&nbsp</td></tr>';
+
  DOM.addressesRecovered.append(html);
- 
+
 
  }
- 
+
  function createAddressUrl(address, coinType)
  {
-    str = '<a href="https://www.blockchain.com/' + coinType + '/address/' + address + '">' + address + '</a>';
+    str = '<a href="https://chainz.cryptoid.info/' + coinType + '/address.dws?' + address + '">' + address + '</a>';
     return str;
  }
- 
- 
+
+
  function DerivePublicAddress(path) { //based on calculateValues
 
     bip_ver = parseInt((path.split("/")[1]).replace("'",""));
     coin = parseInt((path.split("/")[2]).replace("'",""));
     console.log(bip_ver)
             var key = derive(path)
- 
+
             var keyPair = key.keyPair;
             // get address
             var address = keyPair.getAddress().toString();
@@ -358,10 +353,10 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
             var checksumAddress = ethUtil.toChecksumAddress(hexAddress);
             return address = ethUtil.addHexPrefix(checksumAddress);
             }
- 
+
             // Segwit addresses are different
- 
- 
+
+
             if ((bip_ver == 141) || (bip_ver == 84))   {
             var keyhash = bitcoinjs.bitcoin.crypto.hash160(key.getPublicKeyBuffer());
             var scriptpubkey = bitcoinjs.bitcoin.script.witnessPubKeyHash.output.encode(keyhash);
@@ -381,7 +376,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
      {
         var bip32ExtendedKey = calcBip32ExtendedKey(path);
         var key = bip32ExtendedKey.derive(0); //not hardened
- 
+
         return key;
      }
 
@@ -391,7 +386,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
 
     function showPending() {
         DOM.feedback
-            .text("Calculating...")
+            .text("Calculating...This can take several minutes")
             .show();
     }
 
@@ -598,7 +593,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
         return s;
     }
 
- 
+
 
 
 

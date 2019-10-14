@@ -8596,13 +8596,13 @@ module.exports={
   "OP_CHECKMULTISIGVERIFY": 175,
 
   "OP_NOP1": 176,
-  
+
   "OP_NOP2": 177,
   "OP_CHECKLOCKTIMEVERIFY": 177,
 
   "OP_NOP3": 178,
   "OP_CHECKSEQUENCEVERIFY": 178,
-  
+
   "OP_NOP4": 179,
   "OP_NOP5": 180,
   "OP_NOP6": 181,
@@ -8989,6 +8989,30 @@ function sha256 (buffer) {
   return createHash('sha256').update(buffer).digest()
 }
 
+function groestlx2(buffer) {
+  return new Buffer(hex2bytes(Module.ccall('GroestlCoinHash', 'string', ['string'], [int8ArrayToHexString(buffer)])));
+}
+
+function int8ArrayToHexString(array) {
+	var str = '';
+
+	for (var i = 0; i < array.length; i++) {
+		if (array[i] < 16) {
+			str += '0' + array[i].toString(16);
+		}
+		else {
+			str += array[i].toString(16);
+		}
+	}
+	return str;
+}
+
+function hex2bytes(s) {
+	for (var c = [], len = s.length, i = 0; i < len; i += 2)
+		c.push(parseInt(s.substring(i, i + 2), 16));
+	return c;
+}
+
 function hash160 (buffer) {
   return ripemd160(sha256(buffer))
 }
@@ -9002,7 +9026,8 @@ module.exports = {
   hash256: hash256,
   ripemd160: ripemd160,
   sha1: sha1,
-  sha256: sha256
+  sha256: sha256,
+  groestlx2: groestlx2
 }
 
 },{"create-hash":85}],48:[function(require,module,exports){
@@ -9751,19 +9776,19 @@ module.exports = {
 
 module.exports = {
   bitcoin: {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'bc',
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'grs',
     bip32: {
       public: 0x0488b21e,
       private: 0x0488ade4
     },
-    pubKeyHash: 0x00,
+    pubKeyHash: 0x24,
     scriptHash: 0x05,
     wif: 0x80
   },
   testnet: {
-    messagePrefix: '\x18Bitcoin Signed Message:\n',
-    bech32: 'tb',
+    messagePrefix: '\x1cGroestlCoin Signed Message:\n',
+    bech32: 'tgrs',
     bip32: {
       public: 0x043587cf,
       private: 0x04358394
@@ -9771,16 +9796,6 @@ module.exports = {
     pubKeyHash: 0x6f,
     scriptHash: 0xc4,
     wif: 0xef
-  },
-  litecoin: {
-    messagePrefix: '\x19Litecoin Signed Message:\n',
-    bip32: {
-      public: 0x019da462,
-      private: 0x019d9cfe
-    },
-    pubKeyHash: 0x30,
-    scriptHash: 0x32,
-    wif: 0xb0
   }
 }
 
@@ -12261,6 +12276,7 @@ module.exports = function (checksumFn) {
 
 var createHash = require('create-hash')
 var bs58checkBase = require('./base')
+var Buffer = require('safe-buffer').Buffer
 
 // SHA256(SHA256(buffer))
 function sha256x2 (buffer) {
@@ -12268,9 +12284,33 @@ function sha256x2 (buffer) {
   return createHash('sha256').update(tmp).digest()
 }
 
-module.exports = bs58checkBase(sha256x2)
+function groestlx2(buffer) {
+  return new Buffer(hex2bytes(Module.ccall('GroestlCoinHash', 'string', ['string'], [int8ArrayToHexString(buffer)])));
+}
 
-},{"./base":82,"create-hash":85}],84:[function(require,module,exports){
+function int8ArrayToHexString(array) {
+	var str = '';
+
+	for (var i = 0; i < array.length; i++) {
+		if (array[i] < 16) {
+			str += '0' + array[i].toString(16);
+		}
+		else {
+			str += array[i].toString(16);
+		}
+	}
+	return str;
+}
+
+function hex2bytes(s) {
+	for (var c = [], len = s.length, i = 0; i < len; i += 2)
+		c.push(parseInt(s.substring(i, i + 2), 16));
+	return c;
+}
+
+module.exports = bs58checkBase(groestlx2)
+
+},{"./base":82,"create-hash":85,"safe-buffer":101}],84:[function(require,module,exports){
 var Buffer = require('safe-buffer').Buffer
 var Transform = require('stream').Transform
 var StringDecoder = require('string_decoder').StringDecoder

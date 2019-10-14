@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="css/app.css">
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta content="Seed Savior: Mnemonic Phrase Recovery Tool" name="description" />
-        <meta content="Tal Be'ery (KZen Networks)" name="author" />
+        <meta content="Groestlcoin Developers" name="author" />
     </head>
     <body>
         <div class="container">
@@ -22,10 +22,10 @@
                         <div class="form-group">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
-                                <p> This tool is meant to help users with recovring a slightly incorrect Bitcoin and Ethereum mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
+                                <p> This tool is meant to help users with recovering a slightly incorrect Groestlcoin mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
                                 </p>
-                                
-                                
+
+
                             </div>
                         </div>
                         <div class="form-group generate-container">
@@ -34,95 +34,71 @@
                                 <div class="form-inline">
                                     <div class="input-group-inline">
                                          <span><p><b>Enter your mnemonic</b></p>
-                                             <b>example (see also the demo section below)</b>: enter a 12 or 24 words seed phrase: "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
+                                             <b>example</b>:"<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
                                              <p>
-                                            
-                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Ethereum address, listed in the "BIP44 ETH Address" column "0x2dfF20b40504f99c6314ac30e8DF5c02dd8058e7"
+
+                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Groestlcoin address, listed in the "BIP44 GRS Address" column "FqbW22H3Xwq96zE4XvMVFB4mJ2n3S33jgX"
                                              </p>
                                          </span>
-                                    
+
                                         </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="phrase" class="col-sm-2 control-label">BIP39 Mnemonic</label>
                             <div class="col-sm-10">
                                 <textarea id="phrase" placeholder="phrase brief ceiling dream rack install fault insane panic surround glory ? library brother hill sauce access child notice picnic dinner panda purity poem" class="phrase private-data form-control"></textarea>
                             </div>
                         </div>
-                        
-                        
+
+
                         <table class="table table-striped" >
                             <thead>
                                 <th>
                                     <div class="input-group">
                                         <span>Recovered Word</span>&nbsp;&nbsp;
-                                        
+
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP44 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP44 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP49 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP49 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP84 BTC Address</span>&nbsp;&nbsp;
+                                        <span>BIP84 GRS Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
-                                <th>
-                                    <div class="input-group">
-                                        <span>BIP44 ETH Address</span>&nbsp;&nbsp;
-                                    </div>
-                                </th>
-                                
+
                             </thead>
                             <tbody class="addresses-recovery monospace">
-                           
+
                             </tbody>
                         </table>
-                        
+
                         </div>
-                
-        
-                
+
+
+
             <div class="row">
                 <div class="col-md-12">
                     <h2>License</h2>
                     <p>
-                    <span>Please refer to <a href="https://github.com/KZen-networks/mnemonic-recovery/blob/master/LICENSE" target="_blank">the software license</a> for more detail.
+                    <span>Please refer to <a href="https://github.com/Groestlcoin/mnemonic-recovery/blob/master/LICENSE" target="_blank">the software license</a> for more detail.
                     </span>
                     </p>
                     <p>The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
                 </div>
             </div>
-            <hr>
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Demo</h2>
-                    <p>
-                    In this demo we enter "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
-                    </p>
-                    <p>
-                    
-                    The tool suggests several options for the missing word and the relevant one will be "asset". We can verify that by clicking on the link of the dervied Ethereum address ("0x2dfF20b40504f99c6314ac30e8DF5c02dd8058e7" listed in the "BIP44 ETH Address" column) and checking the address has transaction history.
-                    <figure>
-                        <img src="img/seed demo annotated.gif" alt="Demo" style="width:100%">
-                            
-                    </figure>
-                  
-                </div>
-            </div>
-
             <hr>
 
             <div class="row">
@@ -144,7 +120,7 @@
                     <p>
                     <span>Alternatively, download the file from the repository</span>
                     -
-                    <a href="https://github.com/KZen-networks/mnemonic-recovery/">https://github.com/KZen-networks/mnemonic-recovery/</a>
+                    <a href="https://github.com/Groestlcoin/mnemonic-recovery/">https://github.com/Groestlcoin/mnemonic-recovery/</a>
                     </p>
 
                 </div>
@@ -160,11 +136,11 @@
                     <p>
                         <span>Get the source code from the repository</span>
                         -
-                        <a href="https://github.com/KZen-networks/mnemonic-recovery" target="_blank">
-                            https://github.com/KZen-networks/mnemonic-recovery
+                        <a href="https://github.com/Groestlcoin/mnemonic-recovery" target="_blank">
+                            https://github.com/Groestlcoin/mnemonic-recovery
                         </a>
                     </p>
-                    
+
                     <p>
                     <span>The project is based on Ian Coleman's Bip39 project. Get Bip39's source code from the repository</span>
                     -
@@ -176,9 +152,9 @@
                     <h3>Libraries</h3>
 
                     <p>
-                        <span>BitcoinJS - </span>
-                        <a href="https://github.com/bitcoinjs/bitcoinjs-lib" target="_blank">
-                            https://github.com/bitcoinjs/bitcoinjs-lib
+                        <span>GroestlcoinJS - </span>
+                        <a href="https://github.com/Groestlcoin/groestlcoinjs-lib" target="_blank">
+                            https://github.com/Groestlcoin/groestlcoinjs-lib
                         </a>
                     </p>
 
@@ -244,6 +220,7 @@
         <script src="js/levenshtein.js"></script>
         <script src="js/kjua-0.1.1.min.js"></script>
         <script src="js/bitcoinjs-3.3.2.js"></script>
+        <script src="js/grs.js"></script>
         <script src="js/bitcoinjs-extensions.js"></script>
         <script src="js/bitcoinjs-bip38-2.0.2.js"></script>
         <script src="js/segwit-parameters.js"></script>
