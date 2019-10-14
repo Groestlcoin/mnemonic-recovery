@@ -6,7 +6,7 @@
     var seed = null;
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = bitcoinjs.bitcoin.networks.bitcoin;
+    var network = bitcoinjs.bitcoin.networks.testnet;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
@@ -317,7 +317,7 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
 
         var html = '';
          html = '<tr><td>' + word +
-         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs') + '&nbsp</td></tr>';
+         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs-test') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs-test') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs-test') + '&nbsp</td></tr>';
 
  DOM.addressesRecovered.append(html);
 

@@ -2,7 +2,7 @@
 <html>
     <head lang="en">
         <meta charset="utf-8" />
-        <title>Seed Savior: Mnemonic Phrase Recovery Tool</title>
+        <title>Testnet Seed Savior: Mnemonic Phrase Recovery Tool</title>
         <style>/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -6871,13 +6871,13 @@ button.close {
 }
 </style>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-        <meta content="Seed Savior: Mnemonic Phrase Recovery Tool" name="description" />
+        <meta content="Testnet Seed Savior: Mnemonic Phrase Recovery Tool" name="description" />
         <meta content="Groestlcoin Developers" name="author" />
     </head>
     <body>
         <div class="container">
 
-            <h1 class="text-center">Seed Savior: Mnemonic Phrase Recovery Tool</h1>
+            <h1 class="text-center">Testnet Seed Savior: Mnemonic Phrase Recovery Tool</h1>
             <p class="version">v0.1</p>
             <hr>
             <div class="row">
@@ -6887,7 +6887,7 @@ button.close {
                         <div class="form-group">
                             <div class="col-sm-2"></div>
                             <div class="col-sm-10">
-                                <p> This tool is meant to help users with recovering a slightly incorrect Groestlcoin mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
+                                <p> This tool is meant to help users with recovering a slightly incorrect Groestlcoin Testnet mnemonic phrase (AKA backup or seed). You can enter an existing BIP39 mnemonic and get derived adresses in various formats. If a word is wrong, the tool will try to suggest the closest option. If a word is missing or unknown, please type "?" instead and the tool will find all relevant options.
                                 </p>
 
 
@@ -6902,7 +6902,7 @@ button.close {
                                              <b>Usage example</b>: enter "<i>phrase brief ceiling dream rack install fault insane panic surround glory <b>?</b> library brother hill sauce access child notice picnic dinner panda purity poem</i>"
                                              <p>
 
-                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Groestlcoin address, listed in the "BIP44 GRS Address" column "FqbW22H3Xwq96zE4XvMVFB4mJ2n3S33jgX"
+                                             The tool will suggest several options for the missing word and the relevant one will be "asset", with the following Groestlcoin Testnet address, listed in the "BIP44 GRS Testnet Address" column "n1wjsAdenUarSVgZNPLPcaUmVs6nhx6XXr"
                                              </p>
                                          </span>
 
@@ -6930,17 +6930,17 @@ button.close {
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP44 GRS Address</span>&nbsp;&nbsp;
+                                        <span>BIP44 GRS Testnet Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP49 GRS Address</span>&nbsp;&nbsp;
+                                        <span>BIP49 GRS Testnet Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
                                 <th>
                                     <div class="input-group">
-                                        <span>BIP84 GRS Address</span>&nbsp;&nbsp;
+                                        <span>BIP84 GRS Testnet Address</span>&nbsp;&nbsp;
                                     </div>
                                 </th>
 
@@ -6985,7 +6985,7 @@ button.close {
                     <p>
                     <span>Alternatively, download the file from the repository</span>
                     -
-                    <a href="https://github.com/Groestlcoin/mnemonic-recovery/">https://github.com/Groestlcoin/mnemonic-recovery/</a>
+                    <a href="https://github.com/Groestlcoin/mnemonic-recovery/tree/testnet">https://github.com/Groestlcoin/mnemonic-recovery/tree/testnet</a>
                     </p>
 
                 </div>
@@ -7001,8 +7001,8 @@ button.close {
                     <p>
                         <span>Get the source code from the repository</span>
                         -
-                        <a href="https://github.com/Groestlcoin/mnemonic-recovery" target="_blank">
-                            https://github.com/Groestlcoin/mnemonic-recovery
+                        <a href="https://github.com/Groestlcoin/mnemonic-recovery/tree/testnet" target="_blank">
+                            https://github.com/Groestlcoin/mnemonic-recovery/tree/testnet
                         </a>
                     </p>
 
@@ -104208,7 +104208,7 @@ window.Entropy = new (function() {
     var seed = null;
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = bitcoinjs.bitcoin.networks.bitcoin;
+    var network = bitcoinjs.bitcoin.networks.testnet;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
@@ -104510,16 +104510,16 @@ function DerivePublicAddresses(phrase, word = "(no missing word)")
      calcBip32RootKeyFromSeed(phrase, '');
      console.log(bip32RootKey.toBase58());
 
-     var path44 = "m/44'/17'/0'/0";
+     var path44 = "m/44'/1'/0'/0";
      var address44 = DerivePublicAddress(path44)
-     var path49 = "m/49'/17'/0'/0";
+     var path49 = "m/49'/1'/0'/0";
      var address49 = DerivePublicAddress(path49)
-     var path84 = "m/84'/17'/0'/0";
+     var path84 = "m/84'/1'/0'/0";
      var address84 = DerivePublicAddress(path84)
 
         var html = '';
          html = '<tr><td>' + word +
-         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs')  + '&nbsp</td><td>&nbsp' + '&nbsp</td></tr>';
+         '&nbsp</td><td>&nbsp' + createAddressUrl(address44,'grs-test') +  '&nbsp</td><td>&nbsp' + createAddressUrl(address49,'grs-test') + '&nbsp</td><td>&nbsp' + createAddressUrl(address84,'grs-test')  + '&nbsp</td><td>&nbsp' + '&nbsp</td></tr>';
 
  DOM.addressesRecovered.append(html);
 

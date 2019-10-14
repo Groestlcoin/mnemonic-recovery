@@ -1,4 +1,4 @@
-# Seed Savior: Mnemonic Phrase Recovery Tool
+# Testnet Seed Savior: Mnemonic Phrase Recovery Tool
 
 A tool for recovering BIP39 seed phrases.
 
@@ -6,7 +6,7 @@ The tool is based on the bip39 project by Ian Coleman https://github.com/iancole
 
 ## Online Version
 
-https://groestlcoin.org/recovery/
+https://groestlcoin.org/recovery-test/
 
 ## Standalone offline version
 
@@ -34,5 +34,5 @@ please do not commit changes to `mnemonic.html`
 
 # License
 
-This Seed Savior tool is released under the terms of the MIT license. See LICENSE for
+This Testnet Seed Savior tool is released under the terms of the MIT license. See LICENSE for
 more information or see https://opensource.org/licenses/MIT.
